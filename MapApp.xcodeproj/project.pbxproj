@@ -21,6 +21,7 @@
 		CE3F77CA183555910077845B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F77AC183555910077845B /* UIKit.framework */; };
 		CE3F77D2183555910077845B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3F77D0183555910077845B /* InfoPlist.strings */; };
 		CE3F77D4183555910077845B /* MapAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F77D3183555910077845B /* MapAppTests.m */; };
+		CE3F77DE183555AD0077845B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F77DD183555AD0077845B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CE3F77CF183555910077845B /* MapAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapAppTests-Info.plist"; sourceTree = "<group>"; };
 		CE3F77D1183555910077845B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3F77D3183555910077845B /* MapAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapAppTests.m; sourceTree = "<group>"; };
+		CE3F77DD183555AD0077845B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			files = (
 				CE3F77AB183555910077845B /* CoreGraphics.framework in Frameworks */,
 				CE3F77AD183555910077845B /* UIKit.framework in Frameworks */,
+				CE3F77DE183555AD0077845B /* MapKit.framework in Frameworks */,
 				CE3F77A9183555910077845B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		CE3F77A7183555910077845B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F77DD183555AD0077845B /* MapKit.framework */,
 				CE3F77A8183555910077845B /* Foundation.framework */,
 				CE3F77AA183555910077845B /* CoreGraphics.framework */,
 				CE3F77AC183555910077845B /* UIKit.framework */,
@@ -200,6 +204,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Classroom;
 				TargetAttributes = {
+					CE3F77A4183555910077845B = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					CE3F77C5183555910077845B = {
 						TestTargetID = CE3F77A4183555910077845B;
 					};
